@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 982851e637d65771a95597c72592fea54fdaf4c2
+    app.openshift.io/vcs-ref: f07f56ab6924b7b3bb3f2e19996b5170efa8df10
     app.openshift.io/vcs-uri: https://github.com/thomasirmer/eurobridge-app
   labels:
     app.kubernetes.io/instance: eurobridge-app
@@ -21,7 +21,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 982851e637d65771a95597c72592fea54fdaf4c2
+    app.openshift.io/vcs-ref: f07f56ab6924b7b3bb3f2e19996b5170efa8df10
     app.openshift.io/vcs-uri: https://github.com/thomasirmer/eurobridge-app
   labels:
     app.kubernetes.io/instance: eurobridge-app
@@ -35,14 +35,14 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 982851e637d65771a95597c72592fea54fdaf4c2
+        app.openshift.io/vcs-ref: f07f56ab6924b7b3bb3f2e19996b5170efa8df10
         app.openshift.io/vcs-uri: https://github.com/thomasirmer/eurobridge-app
       labels:
         app.kubernetes.io/instance: eurobridge-app
         app.kubernetes.io/name: eurobridge-app
     spec:
       containers:
-      - image: quay.io/thomasirmer/eurobridge-app:982851e637d65771a95597c72592fea54fdaf4c2
+      - image: quay.io/thomasirmer/eurobridge-app:f07f56ab6924b7b3bb3f2e19996b5170efa8df10
         name: eurobridge-app
         ports:
         - containerPort: 3000
@@ -55,7 +55,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 982851e637d65771a95597c72592fea54fdaf4c2
+    app.openshift.io/vcs-ref: f07f56ab6924b7b3bb3f2e19996b5170efa8df10
     app.openshift.io/vcs-uri: https://github.com/thomasirmer/eurobridge-app
   labels:
     app.kubernetes.io/instance: eurobridge-app
